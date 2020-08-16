@@ -1,0 +1,65 @@
+.container1, .container2, .container3, .container4, .container5{
+    border: 1px solid black;
+    width:75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex-box-container1, .flex-box-container2, .flex-box-rps, .flex-box-pick-color, .flex-blackjack-row-2, .flex-blackjack-row-1, .flex-blackjack-row-3{
+    display:flex;
+    border: 1px solid black;
+    padding:10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-1{
+    background: url('https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80') center;
+    color: blue;
+}
+
+.flex-blackjack-row-1 div{
+    border: 1px solid black;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+}
+
+.flex-blackjack-row-1 img{
+    /*THIS ONE PROBABLY SERVES NO PURPOSE*/
+    width:25%;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 button{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 div{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table, th, td{
+    padding:5px;
+    border: 1px solid black;
+}
+.flex-box-container1 div{
+    display:flex;
+    padding:10px;
+    border:1px solid black;
+    align-items: center;
+}
+
+.flex-box-container2 img{
+    display:flex;
+    flex-wrap:wrap;
+    margin:10px;
+    box-shadow:0px 10px 50px rgba(0, 0, 0.7);
+}
+
+.flex-box-rps img:hover{
+    box-shadow:0px 10px 50px rgb(32, 50, 233,1);
+}

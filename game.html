@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    
+    <div class="container1">
+        <h2>AGE IN DAYS</h2>
+        <div class="flex-box-container1">
+            <div>
+                <button class="btn btn-primary" onclick="agedays()">Click me</button>
+            </div>
+        
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container1">
+            <div id="flex-box-result"></div>
+        </div>
+           
+    </div>
+    <div class="container2">
+        <h2>CAT GENERATOR</h2>
+        <button class="btn btn-success" onclick="bhai()">Generate BhAI</button>
+        
+        <div class="flex-box-container2" id="bhai">
+            
+        </div>
+    </div>
+    
+    <div class="container3">
+        <h2>ROCK PAPER SCISSOR</h2>
+        <div class ="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="rock.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="paper.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scissor" src="scissor.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class="container4">
+        <h2 id="change-my-color">KYA RANG KARE BUTTON PE</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Neela</button>
+            <button class="btn btn-danger">Laal</button>
+            <button class="btn btn-warning">Peela</button>
+            <button class="btn btn-success">Hara</button>
+
+        </div>
+    </div>
+
+    <div class="container5">
+        <h2>BLACKJACK</h2>
+        <h3><span id="black-jack-result"></span><!-- khelo--></h3>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You : <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer : <span id="dealer-blackjack-result">0</span>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+   <script src="game.js"></script> 
+</body>
+</html>
